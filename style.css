@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+   
 }
 
+
+
+
 .nav{
+    -ms-flex-align: baseline;
     text-transform: uppercase;
     height: 70px;
     width: 100%;
@@ -17,25 +21,27 @@
     font-weight: 550;
     color: white;
     text-align:right;
-
+    padding-top: 30px;
 }
 
 
 body {
-
+    background-image:url('../site_teste/img/fundo.png');
+    background-position:right;
+    background-size: cover;
+    min-height: 100%;
     font-family:sans-serif;
-
+   
 }
 
 .floatlef{
 
     float: left;
-
+    
 }
 
-.floarig{
-
-    float: right;
+.floatrig{
+    align-items: right;  
 
 }
 
@@ -49,6 +55,14 @@ body {
 a{
      text-decoration:none;
      color: white;
+     padding-left: 20px;
+}
+
+a:hover{
+   
+    border: 10px;
+    background-color: rgb(39, 36, 36);
+
 
 }
 
@@ -56,3 +70,19 @@ li{
     list-style:none;
     
 }
+
+.linha{
+    display: flex;
+    flex-flow: row wrap;
+    }
+
+.coluna-50 {
+        width: 50%;
+    }
+
+.center{
+
+    align-items: center;
+
+}
+
