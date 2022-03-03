@@ -80,9 +80,39 @@ li{
         width: 50%;
     }
 
-.center{
+.centralizar{
 
     align-items: center;
 
 }
+
+ 
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 2px;
+  }
+  .section { 
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(19, 16, 16);
+  }
+  .parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+  }
+  
+  .static {
+    background: rgb(175, 173, 173);
+  }  
 
